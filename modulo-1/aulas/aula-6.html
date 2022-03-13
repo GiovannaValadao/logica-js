@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação com Javascript</h1>
+
+    <script>
+      var number1 = prompt("digite um número"); //pedir pro usuário digitar um número
+      number1 = parseFloat(number1);
+
+      var number2 = prompt("digite um número"); //pedir pro usuário digitar um número
+      number2 = parseFloat(number2);
+
+      var media = (number1 + number2) / 2;
+
+      alert(media > 5);
+      
+      if(media > 5 && number1 > 0 && number2 > 0){
+        alert("Você foi aprovado");
+
+      }else{
+       alert("Você foi reprovado");
+      }
+    </script>
+  </body>
+</html>
