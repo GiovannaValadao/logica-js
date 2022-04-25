@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Lógica de Programação</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação com Javascript</h1>
+    
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+    <script>
+      // funçoes void: funções que não retornam nenhum valor. Sao uteis quando queremos reaproveitar código
+      function mostrarTabuada(){
+        
+         //perguntar o numero para o usuario
+         var n = prompt('digite um número');
+
+         limparTabuada();
+         //converter o numero
+         n = parseFloat(n);
+         //criar uma variavel que servirá de indice
+         var i = 1;
+         //enquanto o indice <= 1000
+               //concatena na variável mensagem
+         while(i <= 1000){
+           mensagem += n + ' x ' + i + ' = '+ (n*i) + '<br>';
+           i++;
+         }
+         output.innerHTML = mensagem;
+      }
+
+      function limparTabuada(){
+        mensagem = '';
+        output.innerHTML = mensagem;
+      }
+
+      var output = document.querySelector('#output');
+
+    </script>
+  </body>
+</html>
